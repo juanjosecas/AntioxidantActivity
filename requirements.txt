@@ -1,0 +1,17 @@
+# Core dependencies for Antioxidant Activity Prediction
+# Python 3.11 is recommended
+
+# Machine Learning Libraries
+scikit-learn==1.4.0
+xgboost==2.1.3
+
+# Chemistry and Molecular Descriptor Libraries
+rdkit==2023.9.4
+mordred==1.2.0
+
+# Data Processing
+pandas==2.2.0
+numpy>=1.24.0,<2.0.0
+
+# Excel File Support
+openpyxl>=3.0.0

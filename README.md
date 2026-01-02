@@ -34,48 +34,45 @@ This software provides **in silico prediction of antioxidant activity** for smal
 
 ## Installation
 
+> 📚 **Detailed Installation Guides Available:**
+> - 🇬🇧 **English**: See [INSTALLATION.md](INSTALLATION.md) for comprehensive installation instructions
+> - 🇪🇸 **Español**: Ver [INSTALACION.md](INSTALACION.md) para instrucciones detalladas de instalación
+
+### Quick Start (3 methods available)
+
+**Method 1: Automatic Setup (Recommended)**
+```bash
+git clone https://github.com/juanjosecas/AntioxidantActivity.git
+cd AntioxidantActivity
+conda env create -f environment.yml
+conda activate AntioxidantActivity_DPPH
+```
+
+**Method 2: Using Setup Scripts**
+- **Linux/macOS**: `./setup.sh`
+- **Windows**: `setup.bat` (run in Anaconda Prompt)
+
+**Method 3: Manual Installation**
+```bash
+git clone https://github.com/juanjosecas/AntioxidantActivity.git
+cd AntioxidantActivity
+conda create --name AntioxidantActivity_DPPH python=3.11
+conda activate AntioxidantActivity_DPPH
+pip install -r requirements.txt
+```
+
 ### Prerequisites
 - **Python 3.11** (recommended for compatibility)
 - **Anaconda** or **Miniconda** (for environment management)
 - **Excel files** (.xlsx) for batch mode (optional)
 
-### Step-by-Step Installation
+### Verify Installation
+```bash
+conda activate AntioxidantActivity_DPPH
+python Main.py --help
+```
 
-1. **Download the repository**
-   ```bash
-   git clone https://github.com/juanjosecas/AntioxidantActivity.git
-   cd AntioxidantActivity
-   ```
-   
-   Alternatively, download and unzip from the [GitHub repository](https://github.com/juanjosecas/AntioxidantActivity).
-
-2. **Install Anaconda** (if not already installed)
-   
-   Download from [anaconda.com/download](https://www.anaconda.com/download) and follow installation instructions.
-
-3. **Create a dedicated Python environment**
-   ```bash
-   conda create --name AntioxidantActivity_DPPH python=3.11
-   ```
-
-4. **Activate the environment**
-   ```bash
-   conda activate AntioxidantActivity_DPPH
-   ```
-
-5. **Install required dependencies**
-   ```bash
-   pip install scikit-learn==1.4.0 rdkit==2023.9.4 pandas==2.2.0 mordred==1.2.0 xgboost==2.1.3 openpyxl
-   ```
-   
-   **Note**: `openpyxl` is required for reading Excel files.
-
-6. **Verify installation**
-   ```bash
-   python Main.py --help
-   ```
-   
-   You should see the help message with usage instructions.
+You should see the help message with usage instructions.
 
 ---
 
